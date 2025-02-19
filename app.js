@@ -4,6 +4,9 @@ let nombres = [];
 
 //Funcion del boton agregar amigo//
 function agregarAmigo (){
-    nombres = prompt("Agrega el nombre de tu amigo/a");
-    alert("Agregaste a tu amigo")
-}
+    let nombre = document.getElementById("amigo").value;
+   
+    nombres.push(nombre);
+    alert(`Agregaste a ${nombre}`)
+    console.log(nombres)
+} 
